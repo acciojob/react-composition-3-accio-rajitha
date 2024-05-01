@@ -1,0 +1,35 @@
+.tooltip {
+    position: relative;
+    display: block;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: red;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+  .tooltip-divider {
+   
+    width: 200px; 
+    margin-left: 0; 
+    margin-bottom: 30px;
+  }
+
+  .App{
+    margin-top: 100px;
+    width: 300px;
+    margin-left: 30px;
+  }
