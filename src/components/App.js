@@ -1,6 +1,8 @@
 //App.js
 import React from 'react';
 import Tooltip from './Tooltip';
+import '../styles/App.css';
+import '../styles/Tooltip.css';
 
 const App = () => {
   return (
@@ -8,11 +10,10 @@ const App = () => {
       <Tooltip text="This is a Tooltip">
         <h1 className="tooltip-title">Hover over me</h1>
       </Tooltip>
-      <hr style={{ marginBottom: "50px" }} className="tooltip-divider" />
+      <hr className="tooltip-divider" />
       <Tooltip text="This is another tooltip">
         <p className="tooltip-title">Hover over this paragraph</p>
       </Tooltip>
-      <hr style={{ marginTop: "30px" }} className="tooltip-divider" />
     </div>
   );
 };

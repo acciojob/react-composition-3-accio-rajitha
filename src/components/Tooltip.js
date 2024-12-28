@@ -15,19 +15,24 @@ const Tooltip = ({ text, children }) => {
   };
 
   return (
-    <div 
-      className="tooltip" 
-      onMouseEnter={handleMouseEnter} 
+    <div
+      className="tooltip"
+      data-testid="tooltip-container"
+      onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
       {children}
-      {showTooltip && <span className="tooltiptext">{text}</span>}
+      <span
+        className={`tooltiptext ${showTooltip ? 'visible' : ''}`}
+        data-testid="tooltip-text"
+      >
+        {text}
+      </span>
     </div>
   );
 };
 
 export default Tooltip;
-
 
 /*
 import React, { useState } from 'react';

@@ -1,10 +1,12 @@
 .tooltip {
   position: relative;
-  display: inline-block; /* Make it inline so it behaves like a text element */
+  display: inline-block;
 }
 
 .tooltip .tooltiptext {
   visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
   width: 120px;
   background-color: red;
   color: white;
@@ -13,25 +15,26 @@
   padding: 5px;
   position: absolute;
   z-index: 1;
-  bottom: 125%; /* Position the tooltip above the element */
+  bottom: 125%; /* Adjust position of tooltip */
   left: 50%;
-  margin-left: -60px;
+  transform: translateX(-50%);
 }
 
-.tooltip:hover .tooltiptext {
-  visibility: visible; /* Show the tooltip when the parent is hovered */
-}
-
-.tooltip-divider {
-  width: 200px;
-  margin-left: 0;
-  margin-bottom: 30px;
+.tooltip .tooltiptext.visible {
+  visibility: visible;
+  opacity: 1;
 }
 
 .App {
   margin-top: 100px;
   width: 300px;
   margin-left: 30px;
+}
+
+.tooltip-divider {
+  width: 200px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 /*
