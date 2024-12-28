@@ -1,19 +1,18 @@
 //App.js
 import React from 'react';
 import Tooltip from './Tooltip';
-import '../styles/App.css';
-import '../styles/Tooltip.css';
 
 const App = () => {
   return (
     <div className="App">
       <Tooltip text="This is a Tooltip">
-        <h1 className="tooltip-title">Hover over me</h1>
+        <h2 className="tooltip">Hover over this heading</h2>
       </Tooltip>
-      <hr className="tooltip-divider" />
+      <hr style={{ marginBottom: '50px' }} className="tooltip-divider" />
       <Tooltip text="This is another tooltip">
-        <p className="tooltip-title">Hover over this paragraph</p>
+        <p className="tooltip">Hover over this paragraph</p>
       </Tooltip>
+      <hr style={{ marginTop: '30px' }} className="tooltip-divider" />
     </div>
   );
 };
@@ -28,7 +27,7 @@ const App = () => {
   return (
     <div className="App">
       <Tooltip text="This is a Tooltip">
-        <h1 className="tooltip-title">Hover over me</h1>
+        <h2 className="tooltip-title">Hover over me</h2>
       </Tooltip>
       <hr style={{marginBottom: "50px"}} className="tooltip-divider" />
       <Tooltip text="This is another tooltip">
