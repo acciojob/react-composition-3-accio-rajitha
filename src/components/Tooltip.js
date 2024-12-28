@@ -15,7 +15,7 @@ const Tooltip = ({ text, children }) => {
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
-      {children}
+      <div className="tooltip-content">{children}</div>
       {isTooltipVisible && <div className="tooltiptext">{text}</div>}
     </div>
   );
