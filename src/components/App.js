@@ -1,5 +1,4 @@
 //App.js
-// App.js
 import React from 'react';
 import Tooltip from './Tooltip';
 

@@ -1,6 +1,5 @@
 
 //Tooltip.js
-// Tooltip.js
 import React, { useState } from 'react';
 import '../styles/Tooltip.css';
 
@@ -22,7 +21,6 @@ const Tooltip = ({ text, children }) => {
       onMouseLeave={handleMouseLeave}
     >
       {children}
-      {/* Render the tooltip conditionally based on the state */}
       {showTooltip && <span className="tooltiptext">{text}</span>}
     </div>
   );
