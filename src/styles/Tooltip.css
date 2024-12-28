@@ -1,3 +1,47 @@
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer; /* Add cursor pointer for hover effect */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  opacity: 0; /* Start with the tooltip invisible */
+  width: 120px;
+  background-color: red;
+  color: white;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%; /* Position the tooltip above the text */
+  left: 50%;
+  margin-left: -60px; /* Center the tooltip */
+  transition: opacity 0.3s; /* Smooth fade-in transition */
+}
+
+/* When hovering, show the tooltip */
+.tooltip:hover .tooltiptext {
+  opacity: 1; /* Make the tooltip visible */
+}
+
+/* Style for dividers */
+.tooltip-divider {
+  width: 200px; 
+  margin-left: 0; 
+  margin-bottom: 30px;
+}
+
+/* Styling for the app container */
+.App {
+  margin-top: 100px;
+  width: 300px;
+  margin-left: 30px;
+}
+
+/*
 .tooltip {
     position: relative;
     display: block;
@@ -32,4 +76,4 @@
     margin-top: 100px;
     width: 300px;
     margin-left: 30px;
-  }
+  }*/
