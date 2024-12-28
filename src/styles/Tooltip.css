@@ -17,7 +17,10 @@
   left: 50%;
   transform: translateX(-50%);
 }
-
+.tooltiptext {
+  visibility: hidden;
+  /* The rest of the styles remain unchanged */
+}
 .tooltip-wrapper:hover .tooltiptext {
   visibility: visible;
 }
