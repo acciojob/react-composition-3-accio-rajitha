@@ -1,3 +1,42 @@
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: red;
+  color: white;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.tooltip-divider {
+  width: 200px;
+  margin-left: 0;
+  margin-bottom: 30px;
+}
+
+.App {
+  margin-top: 100px;
+  width: 300px;
+  margin-left: 30px;
+}
+/*
 .tooltip-wrapper {
   position: relative;
   display: inline-block;
@@ -19,7 +58,7 @@
 }
 .tooltiptext {
   visibility: hidden;
-  /* The rest of the styles remain unchanged */
+  
 }
 .tooltip-wrapper:hover .tooltiptext {
   visibility: visible;
